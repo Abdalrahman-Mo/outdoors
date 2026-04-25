@@ -1,0 +1,26 @@
+@mixin background-style($image) {
+    background-image: 
+                linear-gradient( to left top,
+                $color-gradient-primary,
+                $color-gradient-primary-2),
+                $image;  //  <=here url(../img/  NAMEimg  .jpg)
+    background-position: 50% 70%;
+    background-size: cover;
+}
+
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
